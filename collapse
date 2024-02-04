@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    
+<head><title>Collapse in Bootstrap components</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    </head>
+    <body class="container-fluid">
+    <div class="accordion" id="parent">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="btn btn-danger w-100 " data-bs-toggle="collapse" data-bs-target="#html">
+                <h2 >html</h2>
+                </button>
+            </div>
+            <div class="accordion-body accordion-collapse collapse" id="html" data-bs-parent="#parent">
+                <p>html is a hyper text markup language</p>
+            </div>
+            <div class="accordion-header">
+                <button class="btn btn-success w-100 " data-bs-toggle="collapse" data-bs-target="#css">
+                <h2 >css</h2>
+                </button>
+            </div>
+            <div class="accordion-body accordion-collapse collapse" id="css" data-bs-parent="#parent">
+                <p>casecading stylesheets</p>
+            </div>
+            <div class="accordion-header">
+                <button class="btn btn-warning w-100 " data-bs-toggle="collapse" data-bs-target="#js">
+                <h2 >js</h2>
+                </button>
+            </div>
+            <div class="accordion-body accordion-collapse collapse" id="js" data-bs-parent="#parent">
+                <p>java script</p>
+            </div>
+
+        </div>
+    </div>
+
+
+        <script src="../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        </div>
+    </body>
+</html>
